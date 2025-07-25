@@ -316,3 +316,103 @@ function SearchElemrnt(arr,i) {
 let arr = [1, 2, 5, 7, 8, 9, 12, 4]
 let res = SearchElemrnt(arr, 5)
 console.log(res)
+
+
+// function RevInteger(n) {
+//     let rev = 0;
+//     let nCopy = n;
+//     n = Math.abs(n)
+//     while (n > 0) {
+//         let last = n % 10;
+//         rev = (rev * 10) + last;
+//         n = Math.floor(n / 10);
+//     }
+//     return (nCopy < 0 ? -rev : rev)
+// }
+// let sol = RevInteger(-125478)
+// console.log(sol)
+
+// var reverse = function (x) {
+//     let xCopy = x;
+//     x = Math.abs(x);
+//     let rev = 0;
+//     while (x > 0) {
+//         let rem = x % 10;
+//         rev = (rev * 10) + rem;
+//         x = Math.floor(x/10)
+//     }
+//     return (xCopy < 0 ? -rev : rev)
+// };
+
+// console.log(reverse(12547))
+
+
+function MAxNum(arr) {
+    let max = -Infinity;
+    for (let i = 0; i < arr.length; i++){
+        if (arr[i] > max) {
+            max=arr[i]
+        }
+    }
+    return max
+}
+
+let arr = [12, 25, 2, 45, 74, -25, 65, 20]
+console.log(MAxNum(arr))
+
+
+function SecMax(arr) {
+    let first = -Infinity;
+    let second = -Infinity;
+    for (let i = 0; i < arr.length; i++){
+        if (arr[i] > first) {
+            second = first;
+            first = arr[i];
+        }
+        else if (arr[i] > second) {
+            second = arr[i]
+        }
+    }
+    return second;
+}
+let arr = [12, 25, 2, 45, 74, -25, 65, 20]
+console.log(SecMax(arr))
+
+
+
+let RemoveDup=function (nums) {
+    let x = 0
+    for (let i = 0; i < nums.length; i++){
+        if (nums[i] > nums[x]){
+            x = x + 1;
+            nums[x] = nums[i];
+        }
+    }
+    return x+1;
+}
+
+let nums = [0, 0, 1, 2, 2, 3, 3, 3, 3, 4, 4, 5]
+
+console.log(RemoveDup(nums))
+
+let removVale = function (nums, val) {
+    let val = 3;
+
+}
+
+
+var merge = function(nums1, m, nums2, n) {
+    let numsCopy = nums1.slice(0, m);
+    console.log(numsCopy)
+    let p1=0;
+    let p2=0;
+    for(let i=0;i<m+n;i++){
+        if(p1<m && nums1[p1]<num2[p2]){
+            numsCopy[i]=nums1[p1]
+        }
+        else{
+            nums2[p2]>
+        }
+    }
+};
+merge([1, 0, 2, 5, 4, 7],3,[4,5,7,5,2],2)
