@@ -331,31 +331,80 @@
 //     }
 // }
 
-for(let i=0;i<5;i++){
-    let row='';
-    for(let j=0;j<5;j++){
-        row=row+' *'
-    }
-    console.log(row)
-}
+// for(let i=0;i<5;i++){
+//     let row='';
+//     for(let j=0;j<5;j++){
+//         row=row+' *'
+//     }
+//     console.log(row)
+// }
+
+
+
+// let n=5
+
+// for (let i = 0; i <n; i++){
+//     let row = '';
+//     for (let j = 0; j < n - i; j++){
+//         row=row+(j+1)
+//     }
+//     console.log(row)
+// }
+
+
+// for (let i = 0; i < n; i++) {
+//     let row = '';
+//     for (let j = 0; j < n - i; j++) {
+//         row = row + ('*')
+//     }
+//     console.log(row)
+// }
+
 
 
 
 let n=5
-
-for (let i = 0; i <n; i++){
-    let row = '';
-    for (let j = 0; j < n - i; j++){
-        row=row+(j+1)
+for (let i = 0; i < n; i++){
+    let row = ''
+    for (let j = 0; j < n - (i + 1); j++){
+        row=row+' '
+    }
+    for (let k = 0; k < (i + 1); k++){
+        row=row+'*'
     }
     console.log(row)
 }
 
 
-for (let i = 0; i < n; i++) {
+
+
+
+for (let i = 0; i < n; i++){
     let row = '';
-    for (let j = 0; j < n - i; j++) {
-        row = row + ('*')
+    let toggle = 1;
+    for (let j = 0; j <= i; j++){
+        row = row + toggle;
+        if (toggle == 0) {
+            toggle=1
+        }
+        else {
+            toggle=0
+        }
     }
     console.log(row)
 }
+
+
+function CountDigits(n) {
+    if (n == 0) return 1;
+    let count = 0;
+    n=Math.abs(n)
+    while (n > 0) {
+        n = Math.floor(n / 10);
+        count++
+    }
+    return count
+}
+let n = -125470;
+let res = CountDigits(n)
+console.log(res)
