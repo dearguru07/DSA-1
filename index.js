@@ -408,3 +408,129 @@ function CountDigits(n) {
 let n = -125470;
 let res = CountDigits(n)
 console.log(res)
+
+
+
+// let arr = [10,2,0,1,1,1,10]
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++){
+//     sum=sum+arr[i]
+// }
+// console.log(sum);
+
+
+// let n=5
+
+// for (let i = 0; i <n; i++){
+//     let row = '';
+//     for (let j = 0; j < n - i; j++){
+//         row=row+(j+1)
+//     }
+//     console.log(row)
+// }
+
+
+// for (let i = 0; i < n; i++) {
+//     let row = '';
+//     for (let j = 0; j < n - i; j++) {
+//         row = row + ('*')
+//     }
+//     console.log(row)
+// }
+
+
+// let n=10
+// for (let i = 0; i < n; i++){
+//     let row = ''
+//     for (let j = 0; j < n - (i + 1); j++){
+//         row=row+' '
+//     }
+//     for (let k = 0; k < (i + 1); k++){
+//         row=row+'*'
+//     }
+//     console.log(row)
+// }
+
+// let toggle = '';
+
+// for (let i = 0; i < n; i++){
+//     let row = '';
+//     for (let j = 0; j <= i; j++){
+//         row = row + toggle;
+//         if (toggle == 0) {
+//             toggle=1
+//         }
+//         else {
+//             toggle=0
+//         }
+//     }
+//     console.log(row)
+// }
+
+
+// function CountDigits(n) {
+//     if (n == 0) return 1;
+//     let count = 0;
+//     n=Math.abs(n)
+//     while (n > 0) {
+//         n = Math.floor(n / 10);
+//         count++
+//     }
+//     return count
+// }
+// let n = -125470;
+// let res = CountDigits(n)
+// console.log(res)
+
+
+// function Polyndrom(n) {
+//     let nCopy=n
+//     let rev = 0;
+//     while (n > 0) {
+//         let rem = n % 10;
+//         rev = (10 * rev) + rem;
+//         n=Math.floor(n/10)
+//     }
+//     if (rev===nCopy) {
+//         return true
+//     }
+//     else {
+//         return false
+//     }
+// }
+// Polyndrom(125)
+// let res=Polyndrom(102)
+
+// console.log(res)
+
+// console.log('Hello')
+
+
+
+// function Count(n) {
+//     // let nCopy = n;
+//     if (n == 0) return 1;
+//     n=Math.abs(n)
+//     let Digits = 0;
+//     while (n > 0) {
+//         n = Math.floor(n / 10)
+//         Digits++
+//     }
+//     return Digits;
+// }
+// let res = Count(1025470)
+// console.log(res)
+
+
+function Reverse(n) {
+    let rev = 0;
+    n=Math.abs(n)
+    while (n > 0) {
+        let rem = Math.floor(n % 10)
+        rev = (rev * 10) + rem
+        n=Math.floor(n/10)
+    }
+    return rev
+}
+let res = Reverse(-1250)
+console.log(res)
