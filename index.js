@@ -534,3 +534,72 @@ function Reverse(n) {
 }
 let res = Reverse(-1250)
 console.log(res)
+
+
+
+let n = 5;
+// for (let c = 0; c < n; c++){
+//     let row = '';
+//     for (let z = 0; z < n; z++){
+//         row=row+' x'
+//     }
+//     console.log(row)
+// }
+
+// for (let c = 0; c < n; c++){
+//     let row = '';
+//     for (let z = 0; z <= c; z++){
+//         row=row+' x'
+//     }
+//     console.log(row)
+// }
+
+// for (let c = 0; c < n; c++){
+//     let row = '';
+//     for (let j = 0; j <= c; j++){
+//         row=row+(j+1)
+//     }
+//     console.log(row)
+// }
+
+
+
+// for (let c = 0; c < n; c++){
+//     let row = '';
+//     for (let j = 0; j <= c; j++){
+//         row=row+(c+1)
+//     }
+//     console.log(row)
+// }
+
+
+// for (let c = 0; c < n; c++){
+//     let row = '';
+//     for (let j = 0; j < n-c; j++){
+//         row=row+(j+1)
+//     }
+//     console.log(row)
+// }
+
+
+// for (let i = 0; i < n; i++){
+//     let row = '';
+//     for (let j = 0; j < n - i; j++){
+//         row=row+"-"
+//     }
+//     for (let k = 0; k <= i; k++){
+//         row=row+'x'
+//     }
+//     console.log(row)
+// }
+
+
+// for (let i = 0; i < n; i++){
+//     let row = '';
+//     for (let j = 0; j <= i; j++){
+//         row=row+
+//     }
+// }
+
+let xm = 1 % 10
+console.log(xm)
