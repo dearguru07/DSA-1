@@ -395,21 +395,6 @@ for (let i = 0; i < n; i++){
 }
 
 
-function CountDigits(n) {
-    if (n == 0) return 1;
-    let count = 0;
-    n=Math.abs(n)
-    while (n > 0) {
-        n = Math.floor(n / 10);
-        count++
-    }
-    return count
-}
-let n = -125470;
-let res = CountDigits(n)
-console.log(res)
-
-
 
 // let arr = [10,2,0,1,1,1,10]
 // let sum = 0;
@@ -522,84 +507,3 @@ console.log(res)
 // console.log(res)
 
 
-function Reverse(n) {
-    let rev = 0;
-    n=Math.abs(n)
-    while (n > 0) {
-        let rem = Math.floor(n % 10)
-        rev = (rev * 10) + rem
-        n=Math.floor(n/10)
-    }
-    return rev
-}
-let res = Reverse(-1250)
-console.log(res)
-
-
-
-let n = 5;
-// for (let c = 0; c < n; c++){
-//     let row = '';
-//     for (let z = 0; z < n; z++){
-//         row=row+' x'
-//     }
-//     console.log(row)
-// }
-
-// for (let c = 0; c < n; c++){
-//     let row = '';
-//     for (let z = 0; z <= c; z++){
-//         row=row+' x'
-//     }
-//     console.log(row)
-// }
-
-// for (let c = 0; c < n; c++){
-//     let row = '';
-//     for (let j = 0; j <= c; j++){
-//         row=row+(j+1)
-//     }
-//     console.log(row)
-// }
-
-
-
-// for (let c = 0; c < n; c++){
-//     let row = '';
-//     for (let j = 0; j <= c; j++){
-//         row=row+(c+1)
-//     }
-//     console.log(row)
-// }
-
-
-// for (let c = 0; c < n; c++){
-//     let row = '';
-//     for (let j = 0; j < n-c; j++){
-//         row=row+(j+1)
-//     }
-//     console.log(row)
-// }
-
-
-// for (let i = 0; i < n; i++){
-//     let row = '';
-//     for (let j = 0; j < n - i; j++){
-//         row=row+"-"
-//     }
-//     for (let k = 0; k <= i; k++){
-//         row=row+'x'
-//     }
-//     console.log(row)
-// }
-
-
-// for (let i = 0; i < n; i++){
-//     let row = '';
-//     for (let j = 0; j <= i; j++){
-//         row=row+
-//     }
-// }
-
-let xm = 1 % 10
-console.log(xm)
