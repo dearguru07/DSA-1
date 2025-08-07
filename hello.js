@@ -768,3 +768,71 @@
 // }
 // let res = Reverse(-1250)
 // console.log(res)
+
+
+
+// function Fun(num) {
+//     if (num == 1) return;
+//     console.log(num);
+//     // num = num - 1;
+//     Fun(--num)
+// }
+// let num = 10;
+// Fun(num)
+
+
+// for (let i = 0; i < n-2; i++){
+//     let row = '';
+//     for (let j = 0; j < n-1; j++){
+//         row=row+' x'
+//     }
+//     console.log(row)
+// }
+
+// for (let i = 0; i < n; i++){
+//     let row = '';
+//     for (let j = 0; j < n-i+1; j++){
+//         row=row+' '
+//     }
+//     for (let k = 0; k < i + 1; k++){
+//         row=row+'x'
+//     }
+//     console.log(row)
+// }
+
+
+// for (let i = 0; i < n; i++){
+//     let row = '';
+//     for (let j = 0; j < n - i-1; j++){
+//         row=row+(j+1)
+//     }
+//     console.log(row)
+// }
+
+// for (let i = 0; i < n; i++){
+//     let row = '';
+//     for (let j = 0; j < i + 1; j++){
+//         row=row+(i+1)
+//     }
+//     console.log(row)
+// }
+
+
+
+// for (let i = 0; i < n; i++){
+//     let row = '';
+//     for (let j = 0; j < i + 1; j++){
+//         row=row+(j+1)
+
+//     }
+//     console.log(row)
+// }
+
+
+for (let i = 0; i < n; i++){
+    let row = '';
+    for (let j = 0; j < i + 1; j++){
+        row=row+'x'
+    }
+    console.log(row)
+}
