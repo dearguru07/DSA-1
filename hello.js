@@ -836,3 +836,100 @@ for (let i = 0; i < n; i++){
     }
     console.log(row)
 }
+for (let i = 0; i < n; i++){
+    let row = '';
+    for (let j = 0; j < i + 1; j++){
+        row=row+'x'
+    }
+    console.log(row)
+}for (let i = 0; i < n; i++){
+    let row = '';
+    for (let j = 0; j < i + 1; j++){
+        row=row+'x'
+    }
+    console.log(row)
+}for (let i = 0; i < n; i++){
+    let row = '';
+    for (let j = 0; j < i + 1; j++){
+        row=row+'x'
+    }
+    console.log(row)
+}for (let i = 0; i < n; i++){
+    let row = '';
+    for (let j = 0; j < i + 1; j++){
+        row=row+'x'
+    }
+    console.log(row)
+}for (let i = 0; i < n; i++){
+    let row = '';
+    for (let j = 0; j < i + 1; j++){
+        row=row+'x'
+    }
+    console.log(row)
+}for (let i = 0; i < n; i++){
+    let row = '';
+    for (let j = 0; j < i + 1; j++){
+        row=row+'x'
+    }
+    console.log(row)
+}for (let i = 0; i < n; i++){
+    let row = '';
+    for (let j = 0; j < i + 1; j++){
+        row=row+'x'
+    }
+    console.log(row)
+}for (let i = 0; i < n; i++){
+    let row = '';
+    for (let j = 0; j < i + 1; j++){
+        row=row+'x'
+    }
+    console.log(row)
+}for (let i = 0; i < n; i++){
+    let row = '';
+    for (let j = 0; j < i + 1; j++){
+        row=row+'x'
+    }
+    console.log(row)
+}for (let i = 0; i < n; i++){
+    let row = '';
+    for (let j = 0; j < i + 1; j++){
+        row=row+'x'
+    }
+    console.log(row)
+}for (let i = 0; i < n; i++){
+    let row = '';
+    for (let j = 0; j < i + 1; j++){
+        row=row+'x'
+    }
+    console.log(row)
+}for (let i = 0; i < n; i++){
+    let row = '';
+    for (let j = 0; j < i + 1; j++){
+        row=row+'x'
+    }
+    console.log(row)
+}for (let i = 0; i < n; i++){
+    let row = '';
+    for (let j = 0; j < i + 1; j++){
+        row=row+'x'
+    }
+    console.log(row)
+}for (let i = 0; i < n; i++){
+    let row = '';
+    for (let j = 0; j < i + 1; j++){
+        row=row+'x'
+    }
+    console.log(row)
+}for (let i = 0; i < n; i++){
+    let row = '';
+    for (let j = 0; j < i + 1; j++){
+        row=row+'x'
+    }
+    console.log(row)
+}for (let i = 0; i < n; i++){
+    let row = '';
+    for (let j = 0; j < i + 1; j++){
+        row=row+'x'
+    }
+    console.log(row)
+}v
