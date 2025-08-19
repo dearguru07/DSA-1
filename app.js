@@ -233,16 +233,64 @@
 
 
 
-function NegitiveNum(arr) {
-    let count = 0;
-    for (let i = 0; i < arr.length; i++){
-        if (arr[i] < 0) {
-            count++
-        }      
-    }
-    return count;
-}
+// function NegitiveNum(arr) {
+//     let count = 0;
+//     for (let i = 0; i < arr.length; i++){
+//         if (arr[i] < 0) {
+//             count++
+//         }      
+//     }
+//     return count;
+// }
 
-let arr = [1, 2, -5, 4, -7, -8, 5, 2, 1, 4, -5]
-let res = NegitiveNum(arr)
+// let arr = [1, 2, -5, 4, -7, -8, 5, 2, 1, 4, -5]
+// let res = NegitiveNum(arr)
+// console.log(res)
+
+
+// function LargestNUm(arr) {
+//     let large = arr[0];
+//     for (let i = 0; i < arr.length; i++){
+//         if (arr[i] > large) {
+//             large=arr[i]
+//         }
+//     }
+//     return large;
+// }
+
+// let arr = [10, 2, -5, 4, -7, 8, 5, 2, 1, 4, -5]
+// let res = LargestNUm(arr)
+// console.log(res)
+
+
+// function MinNUm(arr) {
+//     let min = Infinity;
+//     for (let i = 0; i < arr.length; i++){
+//         if (arr[i] < min) {
+//             min=arr[i]
+//         }
+//     }
+//     return min;
+// }
+// let arr = [10, 2, -5, 4, -7, -118, 5, 2, 1, 4, -5]
+// let res = MinNUm(arr)
+// console.log(res)
+
+
+function SecLargest(arr) {
+    let first = -Infinity;
+    let Sec = -Infinity;
+    for (let i = 0; i < arr.length; i++){
+        if (arr[i] > first) {
+            Sec = first;
+            first = arr[i];
+        }
+        else if (arr[i] > Sec) {
+            Sec = arr[i];
+        }
+    }
+    return Sec;
+}
+let arr = [10, 2, -5, 4, 7, -118, 5, 2, 1, 4, -5]
+let res = SecLargest(arr)
 console.log(res)
