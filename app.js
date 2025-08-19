@@ -215,3 +215,17 @@ function Polyndrome(n) {
 }
 let res = Polyndrome(14551)
 console.log(res)
+
+
+
+function SearchEle(arr, x) {
+    for (let i = 0; i < arr.length; i++){
+        if (arr[i] == x) {
+            return i;
+        }
+    }
+    return -1
+}
+let arr = [1, 2, 5, 4, 7, 8, 5, 2, 1, 4, 5]
+let res = SearchEle(arr, 5)
+console.log(res)
