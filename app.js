@@ -179,53 +179,70 @@
 
 
 
-let n=5
-for (let i = 0; i < n; i++){
-    let row = '';
-    let toggle = 1;
-    for (let j = 0; j <= i; j++){
-        row = row + toggle;
-        if (toggle == 1) {
-            toggle=0
-        }
-        else {
-            toggle=1
-        }
-    }
-    console.log(row)
-}
+// let n=5
+// for (let i = 0; i < n; i++){
+//     let row = '';
+//     let toggle = 1;
+//     for (let j = 0; j <= i; j++){
+//         row = row + toggle;
+//         if (toggle == 1) {
+//             toggle=0
+//         }
+//         else {
+//             toggle=1
+//         }
+//     }
+//     console.log(row)
+// }
 
 
-function Polyndrome(n) {
-    if(n<0)return false
-    let copyN=n
-    let rev=0
-    while (n > 0) {
-        let rem = n % 10;
-        rev = (10 * rev) + rem;
-        n=Math.floor(n/10)
-    }
-    // if (rev == copyN) {
-    //     return true
-    // }
-    // else {
-    //     return false
-    // }
-    return (rev===copyN)
-}
-let res = Polyndrome(14551)
-console.log(res)
+// function Polyndrome(n) {
+//     if(n<0)return false
+//     let copyN=n
+//     let rev=0
+//     while (n > 0) {
+//         let rem = n % 10;
+//         rev = (10 * rev) + rem;
+//         n=Math.floor(n/10)
+//     }
+//     // if (rev == copyN) {
+//     //     return true
+//     // }
+//     // else {
+//     //     return false
+//     // }
+//     return (rev===copyN)
+// }
+// let res = Polyndrome(14551)
+// console.log(res)
 
 
 
-function SearchEle(arr, x) {
+// function SearchEle(arr, x) {
+//     for (let i = 0; i < arr.length; i++){
+//         if (arr[i] == x) {
+//             return i;
+//         }
+//     }
+//     return -1
+// }
+// let arr = [1, 2, 5, 4, 7, 8, 5, 2, 1, 4, 5]
+// let res1 = SearchEle(arr, 5)
+// console.log(res1)
+
+
+
+
+function NegitiveNum(arr) {
+    let count = 0;
     for (let i = 0; i < arr.length; i++){
-        if (arr[i] == x) {
-            return i;
-        }
+        if (arr[i] < 0) {
+            count++
+        }      
     }
-    return -1
+    return count;
 }
-let arr = [1, 2, 5, 4, 7, 8, 5, 2, 1, 4, 5]
-let res = SearchEle(arr, 5)
+
+let arr = [1, 2, -5, 4, -7, -8, 5, 2, 1, 4, -5]
+let res = NegitiveNum(arr)
 console.log(res)
