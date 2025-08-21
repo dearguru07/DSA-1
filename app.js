@@ -280,12 +280,15 @@
 function SecLargest(arr) {
     let first = -Infinity;
     let Sec = -Infinity;
+    if(arr.length<2){
+        return 'null'
+    }
     for (let i = 0; i < arr.length; i++){
         if (arr[i] > first) {
             Sec = first;
             first = arr[i];
         }
-        else if (arr[i] > Sec) {
+        else if (arr[i] > Sec && arr[i] !== first) {
             Sec = arr[i];
         }
     }
