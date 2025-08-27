@@ -8460,3 +8460,13 @@ hello.js
 // }
 // let res = Reverse(-1250)
 // console.log(res)vv
+
+
+function Recurdion(n) {
+    if (n < 1) return;
+    console.log(n);
+    n = n - 1;
+    Recurdion(n);
+}
+let x = 10;
+Recurdion(x);
