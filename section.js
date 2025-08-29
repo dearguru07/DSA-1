@@ -769,7 +769,7 @@
 // let res = Reverse(-1250)
 // console.log(res)
 
-hello.js
+// hello.js
 
 // function FindEle(arr, x) {
 //   for (let i = 0; i < arr.length; i++){
@@ -8462,11 +8462,34 @@ hello.js
 // console.log(res)vv
 
 
-function Recurdion(n) {
+function Rec(n) {
     if (n < 1) return;
     console.log(n);
     n = n - 1;
-    Recurdion(n);
+    Rec(n);
 }
 let x = 10;
-Recurdion(x);
+Rec(x);
+
+
+
+let n = 4;
+// for (let i = 0; i < n; i++){
+//     let row = '';
+//     for (let j = 0; j <=i; j++){
+//         row = row + '*';
+//     };
+//     console.log(row)
+// }
+
+
+for (let i = 0;i < n; i++) {
+    let row = '';
+    for (let j = 0; j < n - i - 1; j++){
+        row = row + ' ';
+    }
+    for (let k = 0; k <= i; k++){
+        row=row+'x'
+    }
+    console.log(row)
+}

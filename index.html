@@ -1,59 +1,4 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-  <title>Mini ChatGPT</title>
-  <style>
-    body { font-family: Arial; padding: 20px; background: #f9f9f9; }
-    #chat { border: 1px solid #ccc; padding: 10px; height: 300px; overflow-y: auto; background: #fff; }
-    #userInput { width: 80%; padding: 10px; }
-    #sendBtn { padding: 10px 20px; }
-    .bot { color: blue; margin: 5px 0; }
-    .user { color: green; margin: 5px 0; text-align: right; }
-  </style>
-</head>
-<body>
 
-  <h2>Mini ChatGPT</h2>
-  <div id="chat"></div>
-  <input type="text" id="userInput" placeholder="Type your message..." />
-  <button id="sendBtn">Send</button>
-
-  <script>
-    const chat = document.getElementById('chat');
-    const userInput = document.getElementById('userInput');
-    const sendBtn = document.getElementById('sendBtn');
-
-    // Simple rule-based response function
-    function getBotReply(message) {
-      message = message.toLowerCase();
-      if (message.includes("hello")) return "Hello! How can I help you?";
-      if (message.includes("your name")) return "I'm Mini GPT 😄";
-      if (message.includes("how are you")) return "I'm just code, but I'm doing great!";
-      if (message.includes("bye")) return "Goodbye! Have a great day!";
-      return "Sorry, I don't understand that yet.";
-    }
-
-    // Handle sending message
-    sendBtn.onclick = () => {
-      const message = userInput.value.trim();
-      if (message === "") return;
-
-      chat.innerHTML += `<div class="user">You: ${message}</div>`;
-      const reply = getBotReply(message);
-      setTimeout(() => {
-        chat.innerHTML += `<div class="bot">Bot: ${reply}</div>`;
-        chat.scrollTop = chat.scrollHeight;
-      }, 500);
-      userInput.value = "";
-    };
-
-    userInput.addEventListener("keypress", (e) => {
-      if (e.key === "Enter") sendBtn.click();
-    });
-  </script>
-
-</body>
-</html> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -64,6 +9,7 @@
 </head>
 <body>
   <!-- <script src="index.js"></script> -->
-  <script src="hello.js"></script>
+   <h4>Hello</h4>
+  <script src="section.js"></script>
 </body>
 </html>
