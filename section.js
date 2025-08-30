@@ -8503,3 +8503,16 @@ for (let i = 0; i < n; i++){
     }
     console.log(row)
 }
+
+
+
+
+let arr = [1, 2, 5, 4, 7, 8, 52, 1, 32, 12, 141];
+function Sum(n) {
+    let isOdd = arr[n] % 2 == 1;
+    if (n==0) {
+        return isOdd ? arr[n] : 0; 
+    }
+    return (isOdd ? arr[n] :0)+ Sum(n - 1);
+}
+console.log(Sum(arr.length-1))
