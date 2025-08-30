@@ -8516,3 +8516,11 @@ function Sum(n) {
     return (isOdd ? arr[n] :0)+ Sum(n - 1);
 }
 console.log(Sum(arr.length-1))
+
+
+
+function Factorial(n) {
+    if (n == 1) return 1;
+    return n * Factorial(n - 1);
+}
+console.log(Factorial(7));
