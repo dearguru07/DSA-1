@@ -8528,3 +8528,18 @@ console.log(Factorial(7));
 
 
 
+let arr = [1, 7, 5, 1, 4, 7, 2, 0, 3];
+function BobleSort(arr) {
+    let n = arr.length;
+    for (let i = 0; i < n - 1; i++) {
+        for (let j = 0; j < n - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                let tem = arr[j];
+                 arr[j] = arr[j + 1];
+                arr[j + 1] = tem;
+            }
+        }
+    }
+    return arr;
+}
+console.log(BobleSort(arr))
