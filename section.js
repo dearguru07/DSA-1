@@ -8462,84 +8462,115 @@
 // console.log(res)vv
 
 
-function Rec(n) {
-    if (n < 1) return;
-    console.log(n);
-    n = n - 1;
-    Rec(n);
-}
-let x = 10;
-Rec(x);
+// function Rec(n) {
+//     if (n < 1) return;
+//     console.log(n);
+//     n = n - 1;
+//     Rec(n);
+// }
+// let x = 10;
+// Rec(x);
 
 
 
-let n = 4;
-// for (let i = 0; i < n; i++){
+// let n = 4;
+// // for (let i = 0; i < n; i++){
+// //     let row = '';
+// //     for (let j = 0; j <=i; j++){
+// //         row = row + '*';
+// //     };
+// //     console.log(row)
+// // }
+
+
+// for (let i = 0;i < n; i++) {
 //     let row = '';
-//     for (let j = 0; j <=i; j++){
-//         row = row + '*';
-//     };
+//     for (let j = 0; j < n - i - 1; j++){
+//         row = row + ' ';
+//     }
+//     for (let k = 0; k <= i; k++){
+//         row=row+'x'
+//     }
 //     console.log(row)
 // }
 
 
-for (let i = 0;i < n; i++) {
-    let row = '';
-    for (let j = 0; j < n - i - 1; j++){
-        row = row + ' ';
-    }
-    for (let k = 0; k <= i; k++){
-        row=row+'x'
-    }
-    console.log(row)
-}
+
+// for (let i = 0; i < n; i++){
+//     let row = '';
+//     for (let j = 0; j <= n - i - 1; j++){
+//         row = row + 'x';
+//     }
+//     console.log(row)
+// }
 
 
+
+
+// let arr = [1, 2, 5, 4, 7, 8, 52, 1, 32, 12, 141];
+// function Sum(n) {
+//     let isOdd = arr[n] % 2 == 1;
+//     if (n==0) {
+//         return isOdd ? arr[n] : 0; 
+//     }
+//     return (isOdd ? arr[n] :0)+ Sum(n - 1);
+// }
+// console.log(Sum(arr.length-1))
+
+
+
+// function Factorial(n) {
+//     if (n == 1) return 1;
+//     return n * Factorial(n - 1);
+// }
+// console.log(Factorial(7));
+
+
+
+
+// let arr1 = [1, 7, 5, 1, 4, 7, 2, 0, 3];
+// function BobleSort(arr1) {
+//     let n = arr1.length;
+//     for (let i = 0; i < n - 1; i++) {
+//         for (let j = 0; j < n - i - 1; j++) {
+//             if (arr1[j] > arr1[j + 1]) {
+//                 let tem = arr1[j];
+//                  arr1[j] = arr1[j + 1];
+//                 arr1[j + 1] = tem;
+//             }
+//         }
+//     }
+//     return arr1;
+// }
+// console.log(BobleSort(arr1))
+
+
+
+// for (let i = 0; i < n; i++){
+//     let row = '';
+//     for (let j = 0; j < i + 1; j++){
+//         row = row + (j + 1);
+//     }
+//     console.log(row)
+// }
+
+// for (let i = 0; i < n; i++){
+//     let row = '';
+//     for (let j = 0; j<n-i; j++){
+//         row = row + (j+1);
+//     }
+//     console.log(row)
+// }
+
+let n = 5;
 
 for (let i = 0; i < n; i++){
     let row = '';
-    for (let j = 0; j <= n - i - 1; j++){
-        row = row + 'x';
+    for (let j = 0; j < (n - i); j++){
+        row = row + '-';
+    }
+    for (let k = 0; k < (i + 1); k++){
+        row = row + '*';
     }
     console.log(row)
 }
-
-
-
-
-let arr = [1, 2, 5, 4, 7, 8, 52, 1, 32, 12, 141];
-function Sum(n) {
-    let isOdd = arr[n] % 2 == 1;
-    if (n==0) {
-        return isOdd ? arr[n] : 0; 
-    }
-    return (isOdd ? arr[n] :0)+ Sum(n - 1);
-}
-console.log(Sum(arr.length-1))
-
-
-
-function Factorial(n) {
-    if (n == 1) return 1;
-    return n * Factorial(n - 1);
-}
-console.log(Factorial(7));
-
-
-
-
-let arr = [1, 7, 5, 1, 4, 7, 2, 0, 3];
-function BobleSort(arr) {
-    let n = arr.length;
-    for (let i = 0; i < n - 1; i++) {
-        for (let j = 0; j < n - i - 1; j++) {
-            if (arr[j] > arr[j + 1]) {
-                let tem = arr[j];
-                 arr[j] = arr[j + 1];
-                arr[j + 1] = tem;
-            }
-        }
-    }
-    return arr;
-}
-console.log(BobleSort(arr))
