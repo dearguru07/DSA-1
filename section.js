@@ -8575,23 +8575,41 @@
 //     console.log(row)
 // }
 
-let arr = [1, 4, 5, 7, 8, 9, 6, 3, 2, 1];
+// let arr = [1, 4, 5, 7, 8, 9, 6, 3, 2, 1];
 
-function BobblSort(arr) {
+// function BobblSort(arr) {
+//     let n = arr.length;
+//     for (let i = 0; i < n-1; i++){
+//         for (let j = 0; j < n - i - 1; j++){
+//             if (arr[j] > arr[j + 1]) {
+//                 let temp = arr[j];
+//                 arr[j] = arr[j + 1];
+//                 arr[j + 1] = temp;
+//             }
+//         }
+//     }
+//     return arr;
+// }
+
+// console.log(BobblSort(arr));
+
+let arr = [6, 5, 4, 7, 3, 1, 2, 0, 13];
+function SelectionSort(arr) {
     let n = arr.length;
-    for (let i = 0; i < n-1; i++){
-        for (let j = 0; j < n - i - 1; j++){
-            if (arr[j] > arr[j + 1]) {
-                let temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
+    for (let i = 0; i < n - 1; i++){
+        let min = i;
+        for (let j = i + 1; j < n; j++){
+            if (arr[j] < arr[min]) {
+                min = j;
             }
         }
+        let temp = arr[i];
+        arr[i] = arr[min];
+        arr[min] = temp;
     }
     return arr;
 }
-
-console.log(BobblSort(arr))
+console.log(SelectionSort(arr))
 
 // let arr = [0, 2, 1, 4, 5, 2, 1, 4, 7];
 // function BobbleSort(arr) {
