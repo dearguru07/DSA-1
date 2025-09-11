@@ -8562,36 +8562,52 @@
 //     console.log(row)
 // }
 
-let n = 5;
+// let n = 5;
 
-for (let i = 0; i < n; i++){
-    let row = '';
-    for (let j = 0; j < (n - i); j++){
-        row = row + '-';
-    }
-    for (let k = 0; k < (i + 1); k++){
-        row = row + '*';
-    }
-    console.log(row)
-}
+// for (let i = 0; i < n; i++){
+//     let row = '';
+//     for (let j = 0; j < (n - i); j++){
+//         row = row + '-';
+//     }
+//     for (let k = 0; k < (i + 1); k++){
+//         row = row + '*';
+//     }
+//     console.log(row)
+// }
 
+let arr = [1, 4, 5, 7, 8, 9, 6, 3, 2, 1];
 
-
-let arr = [0, 2, 1, 4, 5, 2, 1, 4, 7];
-function BobbleSort(arr) {
+function BobblSort(arr) {
     let n = arr.length;
-    for (let i = 0; i < n - 1; i++){
-        let isSwapped = false;
+    for (let i = 0; i < n-1; i++){
         for (let j = 0; j < n - i - 1; j++){
             if (arr[j] > arr[j + 1]) {
                 let temp = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = temp;
-                isSwapped = true;
             }
         }
-        if (!isSwapped) break;
     }
     return arr;
 }
-console.log(BobbleSort(arr));
+
+console.log(BobblSort(arr))
+
+// let arr = [0, 2, 1, 4, 5, 2, 1, 4, 7];
+// function BobbleSort(arr) {
+//     let n = arr.length;
+//     for (let i = 0; i < n - 1; i++){
+//         let isSwapped = false;
+//         for (let j = 0; j < n - i - 1; j++){
+//             if (arr[j] > arr[j + 1]) {
+//                 let temp = arr[j];
+//                 arr[j] = arr[j + 1];
+//                 arr[j + 1] = temp;
+//                 isSwapped = true;
+//             }
+//         }
+//         if (!isSwapped) break;
+//     }
+//     return arr;
+// }
+// console.log(BobbleSort(arr));
