@@ -8629,3 +8629,73 @@ console.log(SelectionSort(arr))
 //     return arr;
 // }
 // console.log(BobbleSort(arr));
+
+
+
+
+
+// function InsersationSor(arr) {
+//     let n = arr.length;
+//     for (let i = 1; i < n; i++){
+//         let currEle = arr[i];
+//         let prevEle = i - 1;
+//         while (arr[prevEle]>currEle && prevEle>=0) {
+//             arr[prevEle + 1] = arr[prevEle];
+//             prevEle--;
+//         }
+//         arr[prevEle + 1] = currEle;
+//     }
+//     return arr;
+// }
+// console.log(InsersationSor(arr))
+
+
+// function InsertionSort(arr) {
+//     let n = arr.length;
+//     for (let i = 1; i < n; i++){
+//         let currEle = arr[i];
+//         let prevEle = i - 1;
+//         while (currEle<arr[prevEle] && prevEle >=0) {
+//             arr[prevEle + 1] = arr[prevEle];
+//             prevEle--;
+//         }
+//         arr[prevEle+1] = currEle;
+//     }
+//     return arr;
+// }
+// console.log(InsertionSort(arr))
+
+
+// function InsertionSort(arr) {
+//     let n = arr.length;
+//     for (let i = 1; i < n; i++){
+//         let currEle = arr[i];
+//         let prevEle = i - 1;
+//         while (currEle < arr[prevEle] && prevEle >= 0) {
+//             arr[prevEle + 1] = arr[prevEle];
+//             prevEle--;
+//         }
+//         arr[prevEle + 1] = currEle;
+//     }
+//     return arr;
+// }
+// console.log(InsertionSort(arr))
+
+
+
+let arr = [0, 1, 2, 3, 4, 5, 6, 7];
+
+function InterstionSort(a) {
+    let n = a.length;
+    for (let i = 1; i < n; i++){
+        let currEle = a[i];
+        let prevEle = i - 1;
+        while (a[prevEle] > currEle && prevEle>=0) {
+            a[prevEle + 1] = a[prevEle];
+            prevEle--;
+        }
+        a[prevEle + 1] = currEle;
+    }
+    return arr;
+}
+console.log(InterstionSort(arr))
