@@ -8896,3 +8896,39 @@ function InterstionSort(a) {
     return arr;
 }
 console.log(InterstionSort(arr))
+
+
+
+
+let arr = [0, 1, 2, 3, 4, 5, 6, 7];
+
+function InterstionSort(a) {
+    let n = a.length;
+    for (let i = 1; i < n; i++){
+        let currEle = a[i];
+        let prevEle = i - 1;
+        while (a[prevEle] > currEle && prevEle>=0) {
+            a[prevEle + 1] = a[prevEle];
+            prevEle--;
+        }
+        a[prevEle + 1] = currEle;
+    }
+    return arr;
+}
+console.log(InterstionSort(arr))
+let arr = [0, 1, 2, 3, 4, 5, 6, 7];
+
+function InterstionSort(a) {
+    let n = a.length;
+    for (let i = 1; i < n; i++){
+        let currEle = a[i];
+        let prevEle = i - 1;
+        while (a[prevEle] > currEle && prevEle>=0) {
+            a[prevEle + 1] = a[prevEle];
+            prevEle--;
+        }
+        a[prevEle + 1] = currEle;
+    }
+    return arr;
+}
+console.log(InterstionSort(arr))
