@@ -8593,23 +8593,23 @@
 
 // console.log(BobblSort(arr));
 
-let arr = [6, 5, 4, 7, 3, 1, 2, 0, 13];
-function SelectionSort(arr) {
-    let n = arr.length;
-    for (let i = 0; i < n - 1; i++){
-        let min = i;
-        for (let j = i + 1; j < n; j++){
-            if (arr[j] < arr[min]) {
-                min = j;
-            }
-        }
-        let temp = arr[i];
-        arr[i] = arr[min];
-        arr[min] = temp;
-    }
-    return arr;
-}
-console.log(SelectionSort(arr))
+// let arr = [6, 5, 4, 7, 3, 1, 2, 0, 13];
+// function SelectionSort(arr) {
+//     let n = arr.length;
+//     for (let i = 0; i < n - 1; i++){
+//         let min = i;
+//         for (let j = i + 1; j < n; j++){
+//             if (arr[j] < arr[min]) {
+//                 min = j;
+//             }
+//         }
+//         let temp = arr[i];
+//         arr[i] = arr[min];
+//         arr[min] = temp;
+//     }
+//     return arr;
+// }
+// console.log(SelectionSort(arr))
 
 // let arr = [0, 2, 1, 4, 5, 2, 1, 4, 7];
 // function BobbleSort(arr) {
@@ -8752,22 +8752,26 @@ console.log(SelectionSort(arr))
 
 
 
-let arr = [0, 1, 2, 3, 4, 5, 6, 7];
+// let arr = [0, 1, 2, 3, 4, 5, 6, 7];
 
-function InterstionSort(a) {
-    let n = a.length;
-    for (let i = 1; i < n; i++){
-        let currEle = a[i];
-        let prevEle = i - 1;
-        while (a[prevEle] > currEle && prevEle>=0) {
-            a[prevEle + 1] = a[prevEle];
-            prevEle--;
-        }
-        a[prevEle + 1] = currEle;
-    }
-    return arr;
-}
-console.log(InterstionSort(arr))// function InsersationSor(arr) {
+// function InterstionSort(a) {
+//     let n = a.length;
+//     for (let i = 1; i < n; i++){
+//         let currEle = a[i];
+//         let prevEle = i - 1;
+//         while (a[prevEle] > currEle && prevEle>=0) {
+//             a[prevEle + 1] = a[prevEle];
+//             prevEle--;
+//         }
+//         a[prevEle + 1] = currEle;
+//     }
+//     return arr;
+// }
+// console.log(InterstionSort(arr))// 
+// 
+
+
+// function InsersationSor(arr) {
 //     let n = arr.length;
 //     for (let i = 1; i < n; i++){
 //         let currEle = arr[i];
@@ -8880,42 +8884,6 @@ console.log(InterstionSort(arr))// function InsersationSor(arr) {
 
 
 
-let arr = [0, 1, 2, 3, 4, 5, 6, 7];
-
-function InterstionSort(a) {
-    let n = a.length;
-    for (let i = 1; i < n; i++){
-        let currEle = a[i];
-        let prevEle = i - 1;
-        while (a[prevEle] > currEle && prevEle>=0) {
-            a[prevEle + 1] = a[prevEle];
-            prevEle--;
-        }
-        a[prevEle + 1] = currEle;
-    }
-    return arr;
-}
-console.log(InterstionSort(arr))
-
-
-
-
-let arr = [0, 1, 2, 3, 4, 5, 6, 7];
-
-function InterstionSort(a) {
-    let n = a.length;
-    for (let i = 1; i < n; i++){
-        let currEle = a[i];
-        let prevEle = i - 1;
-        while (a[prevEle] > currEle && prevEle>=0) {
-            a[prevEle + 1] = a[prevEle];
-            prevEle--;
-        }
-        a[prevEle + 1] = currEle;
-    }
-    return arr;
-}
-console.log(InterstionSort(arr))
 let arr = [0, 1, 2, 3, 4, 5, 6, 7];
 
 function InterstionSort(a) {
