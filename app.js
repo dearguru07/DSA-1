@@ -297,3 +297,81 @@ function SecLargest(arr) {
 let arr = [10, 2, -5, 4, 7, -118, 5, 2, 1, 4, -5]
 let res = SecLargest(arr)
 console.log(res)
+
+
+
+
+
+
+
+
+// let arr = [0, 1, 2, 3, 4, 5, 6, 7];
+
+// function InterstionSort(a) {
+//     let n = a.length;
+//     for (let i = 1; i < n; i++){
+//         let currEle = a[i];
+//         let prevEle = i - 1;
+//         while (a[prevEle] > currEle && prevEle>=0) {
+//             a[prevEle + 1] = a[prevEle];
+//             prevEle--;
+//         }
+//         a[prevEle + 1] = currEle;
+//     }
+//     return arr;
+// }
+// console.log(InterstionSort(arr))
+
+
+let n = [1,5,4,7,8,5,2,0];
+function SumOfNumbers(n) {
+    if (n ==0) return n;
+    return n*SumOfNumbers(n-1)
+}
+console.log(SumOfNumbers(n))// let arr = [0, 1, 2, 3, 4, 5, 6, 7];
+
+// function InterstionSort(a) {
+//     let n = a.length;
+//     for (let i = 1; i < n; i++){
+//         let currEle = a[i];
+//         let prevEle = i - 1;
+//         while (a[prevEle] > currEle && prevEle>=0) {
+//             a[prevEle + 1] = a[prevEle];
+//             prevEle--;
+//         }
+//         a[prevEle + 1] = currEle;
+//     }
+//     return arr;
+// }
+// console.log(InterstionSort(arr))
+
+
+let n = [1,5,4,7,8,5,2,0];
+function SumOfNumbers(n) {
+    if (n ==0) return n;
+    return n*SumOfNumbers(n-1)
+}
+console.log(SumOfNumbers(n))// let arr = [0, 1, 2, 3, 4, 5, 6, 7];
+
+// function InterstionSort(a) {
+//     let n = a.length;
+//     for (let i = 1; i < n; i++){
+//         let currEle = a[i];
+//         let prevEle = i - 1;
+//         while (a[prevEle] > currEle && prevEle>=0) {
+//             a[prevEle + 1] = a[prevEle];
+//             prevEle--;
+//         }
+//         a[prevEle + 1] = currEle;
+//     }
+//     return arr;
+// }
+// console.log(InterstionSort(arr))
+
+
+let n = [1,5,4,7,8,5,2,0];
+function SumOfNumbers(n) {
+    if (n ==0) return n;
+    return n*SumOfNumbers(n-1)
+}
+console.log(SumOfNumbers(n))v
