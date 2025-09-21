@@ -369,9 +369,31 @@ console.log(SumOfNumbers(n))// let arr = [0, 1, 2, 3, 4, 5, 6, 7];
 // console.log(InterstionSort(arr))
 
 
-let n = [1,5,4,7,8,5,2,0];
-function SumOfNumbers(n) {
-    if (n ==0) return n;
-    return n*SumOfNumbers(n-1)
+// let n = [1,5,4,7,8,5,2,0];
+// function SumOfNumbers(n) {
+//     if (n ==0) return n;
+//     return n*SumOfNumbers(n-1)
+// }
+// console.log(SumOfNumbers(n))
+
+
+
+
+
+let sum = [1,4,7, 2, 5, 4, 9, 8];
+function SelectionSort(sum) {
+    let n = sum.length;
+    for (let i = 0; i < n - 1; i++) {
+        let min = i;
+        for (let j = i + 1; j < n; j++) {
+            if (sum[j] < sum[min]) {
+                min = j;
+            }
+        }
+        let temp = sum[i];
+        sum[i] = sum[min];
+        sum[min] = temp;
+    }
+    return sum;
 }
-console.log(SumOfNumbers(n))v
+console.log(SelectionSort(sum))
