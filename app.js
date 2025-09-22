@@ -380,20 +380,656 @@ console.log(SumOfNumbers(n))// let arr = [0, 1, 2, 3, 4, 5, 6, 7];
 
 
 
-let sum = [1,4,7, 2, 5, 4, 9, 8];
-function SelectionSort(sum) {
-    let n = sum.length;
-    for (let i = 0; i < n - 1; i++) {
-        let min = i;
-        for (let j = i + 1; j < n; j++) {
-            if (sum[j] < sum[min]) {
+// let sum = [1,4,7, 2, 5, 4, 9, 8];
+// function SelectionSort(sum) {
+//     let n = sum.length;
+//     for (let i = 0; i < n - 1; i++) {
+//         let min = i;
+//         for (let j = i + 1; j < n; j++) {
+//             if (sum[j] < sum[min]) {
+//                 min = j;
+//             }
+//         }
+//         let temp = sum[i];
+//         sum[i] = sum[min];
+//         sum[min] = temp;
+//     }
+//     return sum;
+// }
+// console.log(SelectionSort(sum))
+
+
+
+
+
+
+
+let arr = [1, 5, 4, 7, 8, 9, 6, 3, 2, 1];
+function selectionSort(arr) {
+    let n = arr.length;
+    for (let i = 0; i < n - 1; i++){
+        let min =i ;
+        for (let j = i + 1; j < n; j++){
+            if (arr[j] < arr[min]) {
                 min = j;
             }
         }
-        let temp = sum[i];
-        sum[i] = sum[min];
-        sum[min] = temp;
+        let temp = arr[i];
+        arr[i] = arr[min];
+        arr[min] = temp;
     }
-    return sum;
+    return arr;
 }
-console.log(SelectionSort(sum))
+console.log(selectionSort(arr))
+
+
+function BobbleSort(arr) {
+    let n = arr.length;
+    for (let i = 0; i < n-1; i++){
+        for (let j = 0; j < n - 1 - i; j++){
+            if (arr[j] > arr[j + 1]) {
+                let temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+    return arr;
+}
+console.log(BobbleSort(arr))
+
+
+let arr = [1, 5, 4, 7, 8, 9, 6, 3, 2, 1];
+
+
+function InsertionSor(arr) {
+    let n = arr.length;
+    for (let i = 1; i < n; i++){
+        let curr = i;
+        let prev = i - 1;
+        while (arr[prev] > arr[curr] && prev >= 0) {
+            arr[prev + 1] = arr[prev];
+            prev--;
+        }
+        arr[prev + 1] = arr[curr];
+    }
+    return arr;
+}
+console.log(InsertionSor(arr))
+
+
+function InsertionSor(arr) {
+    let n = arr.length;
+    for (let i = 1; i < n; i++){
+        let curr = arr[i];
+        let prev = i - 1;
+        while (arr[prev] > curr && prev >= 0) {
+            arr[prev + 1] = arr[prev];
+            prev--;
+        }
+        arr[prev + 1] = curr;
+    }
+    return arr;
+
+}
+console.log(InsertionSor(arr))
+
+let arr = [1, 5, 4, 7, 8, 9, 6, 3, 2, 1];
+function selectionSort(arr) {
+    let n = arr.length;
+    for (let i = 0; i < n - 1; i++){
+        let min =i ;
+        for (let j = i + 1; j < n; j++){
+            if (arr[j] < arr[min]) {
+                min = j;
+            }
+        }
+        let temp = arr[i];
+        arr[i] = arr[min];
+        arr[min] = temp;
+    }
+    return arr;
+}
+console.log(selectionSort(arr))
+
+
+function BobbleSort(arr) {
+    let n = arr.length;
+    for (let i = 0; i < n-1; i++){
+        for (let j = 0; j < n - 1 - i; j++){
+            if (arr[j] > arr[j + 1]) {
+                let temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+    return arr;
+}
+console.log(BobbleSort(arr))
+
+
+let arr = [1, 5, 4, 7, 8, 9, 6, 3, 2, 1];
+
+
+function InsertionSor(arr) {
+    let n = arr.length;
+    for (let i = 1; i < n; i++){
+        let curr = i;
+        let prev = i - 1;
+        while (arr[prev] > arr[curr] && prev >= 0) {
+            arr[prev + 1] = arr[prev];
+            prev--;
+        }
+        arr[prev + 1] = arr[curr];
+    }
+    return arr;
+}
+console.log(InsertionSor(arr))
+
+
+function InsertionSor(arr) {
+    let n = arr.length;
+    for (let i = 1; i < n; i++){
+        let curr = arr[i];
+        let prev = i - 1;
+        while (arr[prev] > curr && prev >= 0) {
+            arr[prev + 1] = arr[prev];
+            prev--;
+        }
+        arr[prev + 1] = curr;
+    }
+    return arr;
+
+}
+console.log(InsertionSor(arr))
+
+let arr = [1, 5, 4, 7, 8, 9, 6, 3, 2, 1];
+function selectionSort(arr) {
+    let n = arr.length;
+    for (let i = 0; i < n - 1; i++){
+        let min =i ;
+        for (let j = i + 1; j < n; j++){
+            if (arr[j] < arr[min]) {
+                min = j;
+            }
+        }
+        let temp = arr[i];
+        arr[i] = arr[min];
+        arr[min] = temp;
+    }
+    return arr;
+}
+console.log(selectionSort(arr))
+
+
+function BobbleSort(arr) {
+    let n = arr.length;
+    for (let i = 0; i < n-1; i++){
+        for (let j = 0; j < n - 1 - i; j++){
+            if (arr[j] > arr[j + 1]) {
+                let temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+    return arr;
+}
+console.log(BobbleSort(arr))
+
+
+let arr = [1, 5, 4, 7, 8, 9, 6, 3, 2, 1];
+
+
+function InsertionSor(arr) {
+    let n = arr.length;
+    for (let i = 1; i < n; i++){
+        let curr = i;
+        let prev = i - 1;
+        while (arr[prev] > arr[curr] && prev >= 0) {
+            arr[prev + 1] = arr[prev];
+            prev--;
+        }
+        arr[prev + 1] = arr[curr];
+    }
+    return arr;
+}
+console.log(InsertionSor(arr))
+
+
+function InsertionSor(arr) {
+    let n = arr.length;
+    for (let i = 1; i < n; i++){
+        let curr = arr[i];
+        let prev = i - 1;
+        while (arr[prev] > curr && prev >= 0) {
+            arr[prev + 1] = arr[prev];
+            prev--;
+        }
+        arr[prev + 1] = curr;
+    }
+    return arr;
+
+}
+console.log(InsertionSor(arr))
+
+let arr = [1, 5, 4, 7, 8, 9, 6, 3, 2, 1];
+function selectionSort(arr) {
+    let n = arr.length;
+    for (let i = 0; i < n - 1; i++){
+        let min =i ;
+        for (let j = i + 1; j < n; j++){
+            if (arr[j] < arr[min]) {
+                min = j;
+            }
+        }
+        let temp = arr[i];
+        arr[i] = arr[min];
+        arr[min] = temp;
+    }
+    return arr;
+}
+console.log(selectionSort(arr))
+
+
+function BobbleSort(arr) {
+    let n = arr.length;
+    for (let i = 0; i < n-1; i++){
+        for (let j = 0; j < n - 1 - i; j++){
+            if (arr[j] > arr[j + 1]) {
+                let temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+    return arr;
+}
+console.log(BobbleSort(arr))
+
+
+let arr = [1, 5, 4, 7, 8, 9, 6, 3, 2, 1];
+
+
+function InsertionSor(arr) {
+    let n = arr.length;
+    for (let i = 1; i < n; i++){
+        let curr = i;
+        let prev = i - 1;
+        while (arr[prev] > arr[curr] && prev >= 0) {
+            arr[prev + 1] = arr[prev];
+            prev--;
+        }
+        arr[prev + 1] = arr[curr];
+    }
+    return arr;
+}
+console.log(InsertionSor(arr))
+
+
+function InsertionSor(arr) {
+    let n = arr.length;
+    for (let i = 1; i < n; i++){
+        let curr = arr[i];
+        let prev = i - 1;
+        while (arr[prev] > curr && prev >= 0) {
+            arr[prev + 1] = arr[prev];
+            prev--;
+        }
+        arr[prev + 1] = curr;
+    }
+    return arr;
+
+}
+console.log(InsertionSor(arr))
+
+let arr = [1, 5, 4, 7, 8, 9, 6, 3, 2, 1];
+function selectionSort(arr) {
+    let n = arr.length;
+    for (let i = 0; i < n - 1; i++){
+        let min =i ;
+        for (let j = i + 1; j < n; j++){
+            if (arr[j] < arr[min]) {
+                min = j;
+            }
+        }
+        let temp = arr[i];
+        arr[i] = arr[min];
+        arr[min] = temp;
+    }
+    return arr;
+}
+console.log(selectionSort(arr))
+
+
+function BobbleSort(arr) {
+    let n = arr.length;
+    for (let i = 0; i < n-1; i++){
+        for (let j = 0; j < n - 1 - i; j++){
+            if (arr[j] > arr[j + 1]) {
+                let temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+    return arr;
+}
+console.log(BobbleSort(arr))
+
+
+let arr = [1, 5, 4, 7, 8, 9, 6, 3, 2, 1];
+
+
+function InsertionSor(arr) {
+    let n = arr.length;
+    for (let i = 1; i < n; i++){
+        let curr = i;
+        let prev = i - 1;
+        while (arr[prev] > arr[curr] && prev >= 0) {
+            arr[prev + 1] = arr[prev];
+            prev--;
+        }
+        arr[prev + 1] = arr[curr];
+    }
+    return arr;
+}
+console.log(InsertionSor(arr))
+
+
+function InsertionSor(arr) {
+    let n = arr.length;
+    for (let i = 1; i < n; i++){
+        let curr = arr[i];
+        let prev = i - 1;
+        while (arr[prev] > curr && prev >= 0) {
+            arr[prev + 1] = arr[prev];
+            prev--;
+        }
+        arr[prev + 1] = curr;
+    }
+    return arr;
+
+}
+console.log(InsertionSor(arr))
+
+let arr = [1, 5, 4, 7, 8, 9, 6, 3, 2, 1];
+function selectionSort(arr) {
+    let n = arr.length;
+    for (let i = 0; i < n - 1; i++){
+        let min =i ;
+        for (let j = i + 1; j < n; j++){
+            if (arr[j] < arr[min]) {
+                min = j;
+            }
+        }
+        let temp = arr[i];
+        arr[i] = arr[min];
+        arr[min] = temp;
+    }
+    return arr;
+}
+console.log(selectionSort(arr))
+
+
+function BobbleSort(arr) {
+    let n = arr.length;
+    for (let i = 0; i < n-1; i++){
+        for (let j = 0; j < n - 1 - i; j++){
+            if (arr[j] > arr[j + 1]) {
+                let temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+    return arr;
+}
+console.log(BobbleSort(arr))
+
+
+let arr = [1, 5, 4, 7, 8, 9, 6, 3, 2, 1];
+
+
+function InsertionSor(arr) {
+    let n = arr.length;
+    for (let i = 1; i < n; i++){
+        let curr = i;
+        let prev = i - 1;
+        while (arr[prev] > arr[curr] && prev >= 0) {
+            arr[prev + 1] = arr[prev];
+            prev--;
+        }
+        arr[prev + 1] = arr[curr];
+    }
+    return arr;
+}
+console.log(InsertionSor(arr))
+
+
+function InsertionSor(arr) {
+    let n = arr.length;
+    for (let i = 1; i < n; i++){
+        let curr = arr[i];
+        let prev = i - 1;
+        while (arr[prev] > curr && prev >= 0) {
+            arr[prev + 1] = arr[prev];
+            prev--;
+        }
+        arr[prev + 1] = curr;
+    }
+    return arr;
+
+}
+console.log(InsertionSor(arr))
+
+let arr = [1, 5, 4, 7, 8, 9, 6, 3, 2, 1];
+function selectionSort(arr) {
+    let n = arr.length;
+    for (let i = 0; i < n - 1; i++){
+        let min =i ;
+        for (let j = i + 1; j < n; j++){
+            if (arr[j] < arr[min]) {
+                min = j;
+            }
+        }
+        let temp = arr[i];
+        arr[i] = arr[min];
+        arr[min] = temp;
+    }
+    return arr;
+}
+console.log(selectionSort(arr))
+
+
+function BobbleSort(arr) {
+    let n = arr.length;
+    for (let i = 0; i < n-1; i++){
+        for (let j = 0; j < n - 1 - i; j++){
+            if (arr[j] > arr[j + 1]) {
+                let temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+    return arr;
+}
+console.log(BobbleSort(arr))
+
+
+let arr = [1, 5, 4, 7, 8, 9, 6, 3, 2, 1];
+
+
+function InsertionSor(arr) {
+    let n = arr.length;
+    for (let i = 1; i < n; i++){
+        let curr = i;
+        let prev = i - 1;
+        while (arr[prev] > arr[curr] && prev >= 0) {
+            arr[prev + 1] = arr[prev];
+            prev--;
+        }
+        arr[prev + 1] = arr[curr];
+    }
+    return arr;
+}
+console.log(InsertionSor(arr))
+
+
+function InsertionSor(arr) {
+    let n = arr.length;
+    for (let i = 1; i < n; i++){
+        let curr = arr[i];
+        let prev = i - 1;
+        while (arr[prev] > curr && prev >= 0) {
+            arr[prev + 1] = arr[prev];
+            prev--;
+        }
+        arr[prev + 1] = curr;
+    }
+    return arr;
+
+}
+console.log(InsertionSor(arr))
+
+let arr = [1, 5, 4, 7, 8, 9, 6, 3, 2, 1];
+function selectionSort(arr) {
+    let n = arr.length;
+    for (let i = 0; i < n - 1; i++){
+        let min =i ;
+        for (let j = i + 1; j < n; j++){
+            if (arr[j] < arr[min]) {
+                min = j;
+            }
+        }
+        let temp = arr[i];
+        arr[i] = arr[min];
+        arr[min] = temp;
+    }
+    return arr;
+}
+console.log(selectionSort(arr))
+
+
+function BobbleSort(arr) {
+    let n = arr.length;
+    for (let i = 0; i < n-1; i++){
+        for (let j = 0; j < n - 1 - i; j++){
+            if (arr[j] > arr[j + 1]) {
+                let temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+    return arr;
+}
+console.log(BobbleSort(arr))
+
+
+let arr = [1, 5, 4, 7, 8, 9, 6, 3, 2, 1];
+
+
+function InsertionSor(arr) {
+    let n = arr.length;
+    for (let i = 1; i < n; i++){
+        let curr = i;
+        let prev = i - 1;
+        while (arr[prev] > arr[curr] && prev >= 0) {
+            arr[prev + 1] = arr[prev];
+            prev--;
+        }
+        arr[prev + 1] = arr[curr];
+    }
+    return arr;
+}
+console.log(InsertionSor(arr))
+
+
+function InsertionSor(arr) {
+    let n = arr.length;
+    for (let i = 1; i < n; i++){
+        let curr = arr[i];
+        let prev = i - 1;
+        while (arr[prev] > curr && prev >= 0) {
+            arr[prev + 1] = arr[prev];
+            prev--;
+        }
+        arr[prev + 1] = curr;
+    }
+    return arr;
+
+}
+console.log(InsertionSor(arr))
+
+let arr = [1, 5, 4, 7, 8, 9, 6, 3, 2, 1];
+function selectionSort(arr) {
+    let n = arr.length;
+    for (let i = 0; i < n - 1; i++){
+        let min =i ;
+        for (let j = i + 1; j < n; j++){
+            if (arr[j] < arr[min]) {
+                min = j;
+            }
+        }
+        let temp = arr[i];
+        arr[i] = arr[min];
+        arr[min] = temp;
+    }
+    return arr;
+}
+console.log(selectionSort(arr))
+
+
+function BobbleSort(arr) {
+    let n = arr.length;
+    for (let i = 0; i < n-1; i++){
+        for (let j = 0; j < n - 1 - i; j++){
+            if (arr[j] > arr[j + 1]) {
+                let temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+    return arr;
+}
+console.log(BobbleSort(arr))
+
+
+let arr = [1, 5, 4, 7, 8, 9, 6, 3, 2, 1];
+
+
+function InsertionSor(arr) {
+    let n = arr.length;
+    for (let i = 1; i < n; i++){
+        let curr = i;
+        let prev = i - 1;
+        while (arr[prev] > arr[curr] && prev >= 0) {
+            arr[prev + 1] = arr[prev];
+            prev--;
+        }
+        arr[prev + 1] = arr[curr];
+    }
+    return arr;
+}
+console.log(InsertionSor(arr))
+
+
+function InsertionSor(arr) {
+    let n = arr.length;
+    for (let i = 1; i < n; i++){
+        let curr = arr[i];
+        let prev = i - 1;
+        while (arr[prev] > curr && prev >= 0) {
+            arr[prev + 1] = arr[prev];
+            prev--;
+        }
+        arr[prev + 1] = curr;
+    }
+    return arr;
+
+}
+console.log(InsertionSor(arr))
